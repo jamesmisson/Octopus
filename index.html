@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -7,7 +8,7 @@
     </head>
     
     <body>
-        <div>🐙1.0</div>
+        <div>🐙1.1</div>
 
         <div id="input">
         
@@ -174,6 +175,26 @@
 
 <!-- <br> -->
 
+<div id="eebo-output">
+    <div class="checkbox-div">
+        <div class="checkbox-div">
+            <label class="container">EEBO
+                <input type="checkbox" id="eebo-checkbox">
+                <span class="checkmark"></span>
+            </label>
+        <!-- <input type="checkbox" id="eebo-checkbox" name="eebo-checkbox"
+               checked>
+        <label for="eebo-checkbox">EEBO</label> -->
+      </div>
+    </div>
+    <textarea rows = 3 cols = 70 id="eebo_result" onchange="update_link('eebo_result')"></textarea>
+    <br>
+    <!-- <a href='INSERT EEBO URL HERE' id="eebo_link" target="_blank" class="search-button">Search</a> -->
+    <button id="eebo-copy-button" onclick="copystring('eebo_result')">Copy</button>
+    <br>
+</div>
+
+<!-- <br> -->
 
 
   
