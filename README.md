@@ -21,6 +21,7 @@ Required browser settings: Pop-ups/redirects must be enabled in your browser so 
 Make sure you’re logged into all the databases before using Octopus.
 
 Basic use
+
 The ‘In’ section of Octopus is where you input your words, and the ‘Out’ section is where the search strings will appear, before they’re directed to the databases. You can output a simple keyword search to multiple databases:
   -	Type your word into the ‘Keyword’ field (this is the minimum requirement for an Octopus search)
   -	Add a date range in the ‘From’ and/or ‘To’ fields, if needed. For everything before a certain date (i.e. for antedating), just fill in ‘To’ and leave ‘From’ empty; for everything after a certain date (for postdating), fill ‘From’ and leave ‘To’ empty. These must be 4-digit years.
