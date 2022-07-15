@@ -1,7 +1,13 @@
 // Octopus
 // James Misson
-// March 2022 (v1.0)
+// Current verison: 1.2: 15/07/22
 // v1.1: 23/06/22
+// v1.0: March 2022
+
+// New in 1.2
+// GB proximity search corrected
+// multiple keywords work for all fields
+// Fixed: A bug that produced 'undefined' values when both before and after used.
 
 // New in 1.1
 // EEBO module added (automates variant search by adding curly brackets)
@@ -109,9 +115,11 @@ function parseInput() {
     if (beforeArray && afterArray) {
         for (var a = 0; a < afterArray.length; a++) {
             for (var b = 0; b < beforeArray.length; b++) {
+              for (var c = 0; c < keywordArray.length; c++) {
                 let ngram = beforeArray[b] + ' ' + keywordArray[c] + ' ' + afterArray[a];
                 ngrams.push(ngram);
           }
+         }
         }
     } else if (beforeArray) {
         for (var b = 0; b < beforeArray.length; b++) {
@@ -195,10 +203,15 @@ function parseInput() {
 //functions for updating db textareas and links (the repetition between them could be wrapped up in its own function?)
 
 function gb() {
-    //replace proximity in generic string
-    
-    google_string = generic_string.replaceAll(regex, ' AROUND(' + prox + ') ');
-
+    //if proximity
+    if (prox_kw) {
+      let  prox_kwArray = prox_kw.split(', ')
+      google_string = '("' + ngrams.join('" OR "') + '") AROUND(' + prox + ') ("' + prox_kwArray.join('" OR "') + '")'
+      } else {
+        google_string = generic_string
+      }
+  
+   
     //push string to text area, or add to what's already there
     if (document.getElementById("google_result").value) {
         document.getElementById("google_result").value += ' OR ' + google_string
@@ -400,3 +413,6 @@ function clearResults() {
 document.addEventListener('DOMContentLoaded',  function(){
     document.querySelector('form').addEventListener('submit', add);
 });
+
+
+
