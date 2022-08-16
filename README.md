@@ -9,6 +9,7 @@ Quick Guide
 
 
 Full guide
+
 Required browser settings: Pop-ups/redirects must be enabled in your browser so that Octopus can open up multiple tabs at once:
 
   -	Click on the three dots in the top right corner of Chrome
@@ -36,6 +37,7 @@ The ‘In’ section of Octopus is where you input your words, and the ‘Out’
 Hit ‘Clear’ in either the In or Out section to refresh the fields.
 
 Building collocate searches
+
 Octopus combines lists of words in the ‘Before’ and/or ‘After’ fields with your keyword. It encloses these combinations in quotation marks, and joins them with the ‘OR’ operator. The ‘Before’/’After’ fields take lists of words separated by a comma and a space. So for the following input
 
   Before: strong, weak, tall, short, athletic, narrow, stout, broad
