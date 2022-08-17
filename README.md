@@ -21,7 +21,7 @@ Required browser settings: Pop-ups/redirects must be enabled in your browser so 
 
 Make sure you’re logged into all the databases before using Octopus.
 
-Basic use
+Basic use 
 
 The ‘In’ section of Octopus is where you input your words, and the ‘Out’ section is where the search strings will appear, before they’re directed to the databases. You can output a simple keyword search to multiple databases:
   -	Type your word into the ‘Keyword’ field (this is the minimum requirement for an Octopus search)
