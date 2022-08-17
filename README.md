@@ -28,12 +28,7 @@ The ‘In’ section of Octopus is where you input your words, and the ‘Out’
   -	Type your word into the ‘Keyword’ field (this is the minimum requirement for an Octopus search)
   -	Add a date range in the ‘From’ and/or ‘To’ fields, if needed. For everything before a certain date (i.e. for antedating), just fill in ‘To’ and leave ‘From’ empty; for everything after a certain date (for postdating), fill ‘From’ and leave ‘To’ empty. These must be 4-digit years.
   -	Click ‘Add’, or hit Enter, and your keyword appears in the ‘Out’ section
-  -	From here, you can:
-    o	Copy the output to your clipboard by clicking ‘Copy’
-    or
-    o	Run the search in each database separately by clicking ‘Search’ (this opens a new tab)
-    or
-    o	Run the search in multiple database by clicking ‘Search selected’ (this opens multiple tabs)
+  -	From here, you can: Copy the output to your clipboard by clicking ‘Copy' or; Run the search in each database separately by clicking ‘Search’ (this opens a new tab) or; Run the search in multiple database by clicking ‘Search selected’ (this opens multiple tabs).
     
 Hit ‘Clear’ in either the In or Out section to refresh the fields.
 
