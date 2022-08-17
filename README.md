@@ -40,9 +40,9 @@ Building collocate searches
 
 Octopus combines lists of words in the ‘Before’ and/or ‘After’ fields with your keyword. It encloses these combinations in quotation marks, and joins them with the ‘OR’ operator. The ‘Before’/’After’ fields take lists of words separated by a comma and a space. So for the following input
 
-  Before: strong, weak, tall, short, athletic, narrow, stout, broad
-  
-  Keyword: build
+    Before: strong, weak, tall, short, athletic, narrow, stout, broad
+
+    Keyword: build
 
 You’ll get
 
@@ -50,9 +50,9 @@ You’ll get
   
 For
 
-  Keyword: build
-  
-  After: up, in, out, down, against, to
+    Keyword: build
+
+    After: up, in, out, down, against, to
   
 You’ll get 
 
@@ -60,11 +60,11 @@ You’ll get
   
 For 
 
-  Before: I, you, we, they
-  
-  Keyword: build
-  
-  After: ships, boats, canoes
+    Before: I, you, we, they
+
+    Keyword: build
+
+    After: ships, boats, canoes
   
 You’ll get
 
@@ -76,11 +76,11 @@ There isn’t currently a limit on the number of items in your lists — but the
 Proximity searching
 Proximity searches can be performed by entering the distance (as a number) in the ‘N’ field, and a list of proximity words in the ‘Near’  field, separated by a comma and a space. So
 
-  Keyword: build
-  
-  N: 10
-  
-  Near: ship, ships, shipyard, harbour, harbor, port
+    Keyword: build
+
+    N: 10
+
+    Near: ship, ships, shipyard, harbour, harbor, port
 
 Gives
 
@@ -88,13 +88,13 @@ Gives
 
 The ‘Before’/’After’ fields can be used in combination with the proximity fields:
 
-  Before: he, she, it
-  
-  Keyword: builds
-  
-  N: 10
-  
-  Near: ships, boats, kayaks
+    Before: he, she, it
+
+    Keyword: builds
+
+    N: 10
+
+    Near: ships, boats, kayaks
 
 Gives
 
