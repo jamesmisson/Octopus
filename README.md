@@ -46,7 +46,7 @@ Octopus combines lists of words in the ‘Before’ and/or ‘After’ fields wi
 
 You’ll get
 
-  "strong build" OR "weak build" OR "tall build" OR "short build" OR "athletic build" OR "narrow build" OR "stout build" OR "broad build"
+    "strong build" OR "weak build" OR "tall build" OR "short build" OR "athletic build" OR "narrow build" OR "stout build" OR "broad build"
   
 For
 
@@ -56,7 +56,7 @@ For
   
 You’ll get 
 
-  "build up" OR "build in" OR "build out" OR "build down" OR "build against" OR "build to"
+    "build up" OR "build in" OR "build out" OR "build down" OR "build against" OR "build to"
   
 For 
 
@@ -68,7 +68,7 @@ For
   
 You’ll get
 
-  "I build ships" OR "you build ships" OR "we build ships" OR "they build ships" OR "I build boats" OR "you build boats" OR "we build boats" OR "they build boats" OR "I build canoes" OR "you build canoes" OR "we build canoes" OR "they build canoes"
+    "I build ships" OR "you build ships" OR "we build ships" OR "they build ships" OR "I build boats" OR "you build boats" OR "we build boats" OR "they build boats" OR "I build canoes" OR "you build canoes" OR "we build canoes" OR "they build canoes"
 
 The dropdown menus for these fields contain some pre-set lists of useful words (pronouns, articles, modal verbs). Suggestions for more pre-sets are very welcome.
 There isn’t currently a limit on the number of items in your lists — but there should be! Octopus will try searching overlong strings, but the databases will impose their own limits. 
@@ -84,7 +84,7 @@ Proximity searches can be performed by entering the distance (as a number) in th
 
 Gives
 
-  ("build" n10 "ship") OR ("build" n10 "ships") OR ("build" n10 "shipyard") OR ("build" n10 "harbour") OR ("build" n10 "harbor") OR ("build" n10 "port")
+    ("build" n10 "ship") OR ("build" n10 "ships") OR ("build" n10 "shipyard") OR ("build" n10 "harbour") OR ("build" n10 "harbor") OR ("build" n10 "port")
 
 The ‘Before’/’After’ fields can be used in combination with the proximity fields:
 
@@ -98,7 +98,7 @@ The ‘Before’/’After’ fields can be used in combination with the proximit
 
 Gives
 
-  ("he builds" n10 "ships") OR ("he builds" n10 "boats") OR ("he builds" n10 "kayaks") OR ("she builds" n10 "ships") OR ("she builds" n10 "boats") OR ("she builds" n10 "kayaks") OR ("it builds" n10 "ships") OR ("it builds" n10 "boats") OR ("it builds" n10 "kayaks")
+    ("he builds" n10 "ships") OR ("he builds" n10 "boats") OR ("he builds" n10 "kayaks") OR ("she builds" n10 "ships") OR ("she builds" n10 "boats") OR ("she builds" n10 "kayaks") OR ("it builds" n10 "ships") OR ("it builds" n10 "boats") OR ("it builds" n10 "kayaks")
   
 Octopus translates the string to the proximity syntax of Google Books, Gale, Nexis, and ProQuest. Databases without proximity search just default to an ‘AND’ operator (for Twitter this is, in effect, a proximity search, given the shortness of the texts).
 
